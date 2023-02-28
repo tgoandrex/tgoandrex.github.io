@@ -1,7 +1,14 @@
 function About() {
     return (
         <section id='about'>
-            About
+            <div className='flex'>
+                <div id='about-animation'>
+                    Animation
+                </div>
+                <div id='about-summary'>
+                    Summary
+                </div>
+            </div>
         </section>
     )
 }
