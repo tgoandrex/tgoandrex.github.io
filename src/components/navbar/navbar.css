@@ -1,0 +1,42 @@
+header {
+    min-height: 10vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#name, #tablet-desktop-nav div li {
+    margin: 25px 0 0 10px;
+    padding: 5px;
+}
+
+#tablet-desktop-nav div li {
+    float: left;
+}
+
+#mobile-nav div li {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#mobile-toggle {
+    margin: 25px 10px 0 0;
+    padding: 5px;
+}
+
+@media screen and (max-width: 599px) { /* Hide tablet and desktop nav under 600 px */
+    #tablet-desktop-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) { /* Desktop */
+    #name, #tablet-desktop-nav div li {
+        margin: 5px 0 0 10px;
+        padding: 5px;
+    }
+    
+    header {
+        min-height: 5vh;
+    }
+}

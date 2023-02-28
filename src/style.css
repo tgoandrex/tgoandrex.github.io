@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#skills, #projects, #contact {
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li a {
+    color: #000;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 600px) { /* Tablet */
+    #mobile-toggle, #mobile-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) { /* Desktop */
+}

@@ -1,8 +1,8 @@
 function Projects() {
     return (
-        <div>
-            <h3>Projects</h3>
-        </div>
+        <section id='projects'>
+            Projects
+        </section>
     )
 }
 

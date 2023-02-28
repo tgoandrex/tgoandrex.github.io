@@ -1,0 +1,11 @@
+#about {
+    min-height: 90vh;
+    margin-top: 10vh;
+}
+
+@media screen and (min-width: 1000px) { /* Desktop */
+    #about {
+        min-height: 95vh;
+        margin-top: 5vh;
+    }
+}
