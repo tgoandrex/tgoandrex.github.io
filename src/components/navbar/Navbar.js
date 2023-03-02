@@ -21,7 +21,7 @@ function Navbar() {
   return (
     <header>
         <div className='flex' >
-            <div id='name'>Andrew Stapleton</div>
+            <div id='navbar-name'>Andrew Stapleton</div>
             <nav>
                 <ul id='tablet-desktop-nav'>
                     <NavListItems />

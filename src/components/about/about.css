@@ -4,14 +4,24 @@
 }
 
 #about-animation, #about-summary {
-    border: 1px solid #000;
-    height: 250px;
-    width: 250px;
+    height: 500px;
     margin: auto;
+    border: 1px solid #000;
+}
+
+#about-summary {
+    width: 300px;
 }
 
 #about .flex {
     flex-direction: column;
+}
+
+#animation-text {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-family: 'Gloock', serif;
+    font-size: 26px;
 }
 
 @media screen and (min-width: 600px) { /* Tablet */

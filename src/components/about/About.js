@@ -3,7 +3,7 @@ function About() {
         <section id='about'>
             <div className='flex'>
                 <div id='about-animation'>
-                    Animation
+                    <span id='animation-text'>Andrew Stapleton</span>
                 </div>
                 <div id='about-summary'>
                     Summary

@@ -9,7 +9,7 @@ header .flex {
     justify-content: space-between;
 }
 
-#name, #tablet-desktop-nav div li {
+#navbar-name, #tablet-desktop-nav div li {
     margin: 25px 0 0 10px;
     padding: 5px;
 }
@@ -28,6 +28,10 @@ header .flex {
     padding: 5px;
 }
 
+#navbar-name {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 @media screen and (max-width: 599px) { /* Hide tablet and desktop nav under 600 px */
     #tablet-desktop-nav {
         display: none;
@@ -35,7 +39,7 @@ header .flex {
 }
 
 @media screen and (min-width: 1000px) { /* Desktop */
-    #name, #tablet-desktop-nav div li {
+    #navbar-name, #tablet-desktop-nav div li {
         margin: 5px 0 0 10px;
         padding: 5px;
     }
