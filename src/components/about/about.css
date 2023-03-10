@@ -4,10 +4,17 @@
 }
 
 #cube-container, #about-summary {
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    min-height: 30vh;
     margin: auto;
-    border: 1px solid #000;
+}
+
+#about-summary {
+    min-height: 30vh;
+}
+
+#about-summary p {
+    margin-top: 15px;
 }
 
 #cube-container {
@@ -86,11 +93,23 @@
     #about .flex {
         flex-direction: row;
     }
+
+    #cube-container, #about-summary {
+        min-height: 60vh;
+    }
+
+    #about-summary p:first-child {
+        margin-top: 0;
+    }
 }
 
 @media screen and (min-width: 1000px) { /* Desktop */
     #about {
         min-height: 95vh;
         margin-top: 5vh;
+    }
+
+    #cube-container, #about-summary {
+        width: 500px;
     }
 }
