@@ -3,13 +3,13 @@ function About() {
         <section id='about'>
             <div className='flex'>
                 <div id='cube-container'>
-                    <div class="cube">
-                        <div class="side front"></div>
-                        <div class="side back"></div>
-                        <div class="side left"></div>
-                        <div class="side right"></div>
-                        <div class="side top"></div>
-                        <div class="side bottom"></div>
+                    <div className="cube">
+                        <div className="side front"></div>
+                        <div className="side back"></div>
+                        <div className="side left"></div>
+                        <div className="side right"></div>
+                        <div className="side top"></div>
+                        <div className="side bottom"></div>
                     </div>
                 </div>
                 <div id='about-summary'>
