@@ -26,11 +26,7 @@ function About() {
                         urna porttitor rhoncus dolor purus non enim praesent. Amet est placerat in egestas erat imperdiet sed. 
                         Ut placerat orci nulla pellentesque. Habitant morbi tristique senectus et netus et. Vel facilisis 
                         volutpat est velit egestas dui id ornare. Adipiscing elit pellentesque habitant morbi tristique senectus. 
-                        Maecenas pharetra convallis posuere morbi leo. Sit amet volutpat consequat mauris nunc congue nisi 
-                        vitae suscipit. Est lorem ipsum dolor sit amet. Montes nascetur ridiculus mus mauris vitae ultricies leo. 
-                        Iaculis at erat pellentesque adipiscing commodo. Volutpat maecenas volutpat blandit aliquam etiam 
-                        erat velit. Nulla malesuada pellentesque elit eget gravida cum sociis. Aliquet risus feugiat in ante 
-                        metus dictum. Diam maecenas sed enim ut sem viverra aliquet eget sit.
+                        Maecenas pharetra convallis posuere morbi leo.
                     </p>
                 </div>
             </div>

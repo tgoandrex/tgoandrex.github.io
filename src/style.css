@@ -13,7 +13,8 @@ a {
 }
 
 #skills, #projects, #contact {
-    min-height: 100vh;
+    min-height: 90vh;
+    margin-top: 10vh;
 }
 
 ul {
@@ -21,7 +22,7 @@ ul {
 }
 
 ul li a {
-    color: #000;
+    color: #d1d1d1;
 }
 
 .flex {
@@ -29,9 +30,6 @@ ul li a {
 }
 
 @media screen and (min-width: 600px) { /* Tablet */
-    #mobile-toggle, #mobile-nav {
-        display: none;
-    }
 }
 
 @media screen and (min-width: 1000px) { /* Desktop */

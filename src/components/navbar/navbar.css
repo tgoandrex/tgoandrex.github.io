@@ -4,6 +4,8 @@ header {
     top: 0;
     width: 100%;
     z-index: 999;
+    background-color: #333333;
+    color: #d1d1d1;
 }
 
 header .flex {
@@ -15,6 +17,14 @@ header .flex {
     padding: 5px;
 }
 
+.nav-list-item:hover {
+    color: #ffd700;
+}
+
+.nav-list-item:hover a {
+    color: inherit;
+}
+
 #tablet-desktop-nav div li {
     float: left;
 }
@@ -22,6 +32,12 @@ header .flex {
 #mobile-nav div li {
     text-align: center;
     padding: 10px 0;
+    background-color: #333333;
+    transition: transform .2s;
+}
+
+#mobile-nav div li:hover {
+    transform: scale(1.5);
 }
 
 #mobile-toggle {
@@ -35,6 +51,12 @@ header .flex {
 
 @media screen and (max-width: 599px) { /* Hide tablet and desktop nav under 600 px */
     #tablet-desktop-nav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) { /* Tablet */
+    #mobile-toggle, #mobile-nav {
         display: none;
     }
 }
