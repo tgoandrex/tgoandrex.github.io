@@ -1,4 +1,22 @@
 #skills .flex {
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
+}
+
+.skill-card {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.skill-icon {
+    height: 100px;
+    width: auto;
+    display: block;
+    border-bottom: 1px solid black;
+}
+
+.hide {
+    visibility: hidden;
 }
