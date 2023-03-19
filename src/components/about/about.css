@@ -9,12 +9,8 @@
     margin: auto;
 }
 
-#about-summary {
-    min-height: 30vh;
-}
-
 #about-summary p {
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
 #cube-container {

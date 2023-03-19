@@ -12,6 +12,10 @@ header .flex {
     justify-content: space-between;
 }
 
+#navbar-name {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 #navbar-name, #tablet-desktop-nav div li {
     margin: 25px 0 0 10px;
     padding: 5px;
@@ -29,14 +33,14 @@ header .flex {
     float: left;
 }
 
-#mobile-nav div li {
+#mobile-nav ul div li {
     text-align: center;
     padding: 10px 0;
     background-color: #333333;
     transition: transform .2s;
 }
 
-#mobile-nav div li:hover {
+#mobile-nav ul div li:hover {
     transform: scale(1.5);
 }
 
@@ -45,8 +49,13 @@ header .flex {
     padding: 5px;
 }
 
-#navbar-name {
-    font-family: 'Josefin Sans', sans-serif;
+#mobile-nav {
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+
+#mobile-nav.active {
+    opacity: 1;
 }
 
 @media screen and (max-width: 599px) { /* Hide tablet and desktop nav under 600 px */

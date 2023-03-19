@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <header>
-        <div className='flex' >
+        <div className='flex'>
             <div id='navbar-name'>Andrew Stapleton</div>
             <nav>
                 <ul id='tablet-desktop-nav'>
@@ -29,8 +29,8 @@ function Navbar() {
             </nav>
             <i id='mobile-toggle' className='fa fa-bars' onClick={handleToggle}></i>
         </div>
-        <nav>
-            <ul id='mobile-nav'>
+        <nav id='mobile-nav' className={showMobileMenu ? 'active': ''}>
+            <ul>
                 {showMobileMenu ? <NavListItems /> : null}
             </ul>
         </nav>

@@ -14,19 +14,15 @@ function About() {
                 </div>
                 <div id='about-summary'>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.
+                        Hello! My name is Andrew. I'm a self taught web developer with a particular interest in MERN stack 
+                        development, but I've dabbled in other technologies. I like figuring out things myself, and feel a 
+                        great sense of accomplishment when what I worked on finally works as I wanted it to. I've learned a lot, 
+                        bit there is still much more to learn.
                     </p>
                     <p>
-                        Sagittis eu volutpat odio facilisis mauris sit amet. Posuere ac ut consequat semper viverra nam. 
-                        Libero justo laoreet sit amet cursus. Libero id faucibus nisl tincidunt eget nullam non. Fringilla 
-                        urna porttitor rhoncus dolor purus non enim praesent. Amet est placerat in egestas erat imperdiet sed. 
-                        Ut placerat orci nulla pellentesque. Habitant morbi tristique senectus et netus et. Vel facilisis 
-                        volutpat est velit egestas dui id ornare. Adipiscing elit pellentesque habitant morbi tristique senectus. 
-                        Maecenas pharetra convallis posuere morbi leo.
+                        Besides web development, I have also completed a bachelor's in history, did various theater plays in 
+                        high school, and enjoys taking hikes and playing video games. I also like listening to rock and its 
+                        many genres, notably music from 80s and 90s, but not limited to that.
                     </p>
                 </div>
             </div>
