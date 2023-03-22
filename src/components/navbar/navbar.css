@@ -16,6 +16,10 @@ header .flex {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+#navbar-name, #mobile-toggle {
+    font-size: 1.5rem !important;
+}
+
 #navbar-name, #tablet-desktop-nav div li {
     margin: 25px 0 0 10px;
     padding: 5px;
@@ -41,7 +45,7 @@ header .flex {
 }
 
 #mobile-nav ul div li:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
 #mobile-toggle {
@@ -68,15 +72,11 @@ header .flex {
     #mobile-toggle, #mobile-nav {
         display: none;
     }
+
+    header {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 1000px) { /* Desktop */
-    #navbar-name, #tablet-desktop-nav div li {
-        margin: 5px 0 0 10px;
-        padding: 5px;
-    }
-    
-    header {
-        min-height: 5vh;
-    }
 }

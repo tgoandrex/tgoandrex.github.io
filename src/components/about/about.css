@@ -1,6 +1,6 @@
 #about {
-    min-height: 90vh;
-    margin-top: 10vh;
+    min-height: 100vh;
+    padding-top: 10vh;
 }
 
 #cube-container, #about-summary {
@@ -41,12 +41,13 @@
     }
 }
 
-@media screen and (min-width: 1000px) { /* Desktop */
-    #about {
-        min-height: 95vh;
-        margin-top: 5vh;
+@media screen and (min-width: 600px) { /* Tablet */
+    #about-summary {
+        font-size: 1.2rem;
     }
+}
 
+@media screen and (min-width: 1000px) { /* Desktop */
     #cube-container, #about-summary {
         width: 500px;
     }

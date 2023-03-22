@@ -12,9 +12,9 @@ a {
     text-decoration: none;
 }
 
-#skills, #projects, #contact {
-    min-height: 90vh;
-    margin-top: 10vh;
+#projects, #contact {
+    min-height: 100vh;
+    padding-top: 10vh;
 }
 
 ul {
