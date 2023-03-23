@@ -12,7 +12,7 @@ a {
     text-decoration: none;
 }
 
-#projects, #contact {
+#contact {
     min-height: 100vh;
     padding-top: 10vh;
 }
@@ -27,6 +27,10 @@ ul li a {
 
 .flex {
     display: flex;
+}
+
+.hide {
+    visibility: hidden;
 }
 
 @media screen and (min-width: 600px) { /* Tablet */

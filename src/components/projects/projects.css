@@ -1,28 +1,44 @@
-#skills {
+#projects {
     min-height: 100vh;
     padding-top: 10vh;
 }
 
-#skills .flex {
+#projects .flex {
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.skill-card {
+.project-card {
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px;
     text-align: center;
 }
 
-.skill-icon {
-    height: 100px;
+.project-image {
+    height: 300px;
     width: auto;
     display: block;
     border-bottom: 1px solid black;
 }
 
 @media screen and (min-width: 600px) { /* Tablet */
+    #projects .flex {
+        flex-direction: column;
+    }
+
+    .project-card {
+        display: flex;
+    }
+
+    .project-image {
+        border-bottom: none;
+        flex-grow: 2;
+    }
+
+    .project-title, .project-description, .project-link {
+        flex-grow: 1;
+    }
 }
 
 @media screen and (min-width: 1000px) { /* Desktop */
