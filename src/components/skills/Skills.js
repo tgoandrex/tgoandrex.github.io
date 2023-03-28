@@ -32,7 +32,7 @@ function Skills() {
     ]
 
     const listItems = skills.map((skill) =>
-        <li className='skill-card'>
+        <li className='skill-card' key={skill.name}>
             <img className='skill-icon' alt='skill card' src={skill.src}
                 onMouseEnter={()=> {toggleHover(skill.src)}} onMouseLeave={()=> {toggleHover(skill.src)}}
                 />
