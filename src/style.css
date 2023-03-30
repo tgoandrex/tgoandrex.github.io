@@ -21,10 +21,6 @@ ul {
     list-style: none;
 }
 
-ul li a {
-    color: #d1d1d1;
-}
-
 .flex {
     display: flex;
 }

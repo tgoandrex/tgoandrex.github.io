@@ -25,6 +25,10 @@ header .flex {
     padding: 5px;
 }
 
+.nav-list-item a {
+    color: #d1d1d1;
+}
+
 .nav-list-item:hover {
     color: #ffd700;
 }

@@ -12,7 +12,7 @@ function About() {
                         <div className="side bottom"></div>
                     </div>
                 </div>
-                <div id='about-summary'>
+                <div className='about-summary'>
                     <p>
                         Hello! My name is Andrew. I'm a self taught web developer with a particular interest in MERN stack 
                         development, but I've dabbled in other technologies. I like figuring out things myself, and feel a 

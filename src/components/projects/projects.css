@@ -17,11 +17,15 @@
     flex-direction: column;
 }
 
+.project-image-container {
+    display: block;
+    border-bottom: 1px solid black;
+}
+
 .project-image {
     width: 300px;
     height: 300px;
-    display: block;
-    border-bottom: 1px solid black;
+    border-radius: 10px;
 }
 
 .project-content {
@@ -47,13 +51,23 @@
         flex-direction: row;
     }
 
-    .project-image {
+    .project-image-container {
         border-bottom: none;
         flex-grow: 1;
     }
 
+    .project-image {
+        float: left;
+        width: 400px;
+        height: 400px;
+    }
+
     .project-content {
         flex-grow: 1;
+    }
+
+    .project-title, .project-description, .project-link {
+        font-size: 1.2rem;
     }
 }
 

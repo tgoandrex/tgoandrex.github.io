@@ -1,18 +1,28 @@
+import waldo from '../../images/wheres-waldo.PNG'
+import weather from '../../images/weather-app.PNG'
+import memory from '../../images/memory-game.PNG'
+
 function Projects() {
     const projects = [
-        {title: 'Project1', description: 'Description1', link: 'Link1', src: 'Src1'},
-        {title: 'Project2', description: 'Description2', link: 'Link2', src: 'Src2'},
-        {title: 'Project3', description: 'Description3', link: 'Link3', src: 'Src3'},
-        {title: 'Project4', description: 'Description4', link: 'Link4', src: 'Src4'}
+        {title: `Where's Waldo App`,
+        description: `Find Waldo in the picture and get the high score! The less time you took to find Waldo the higher your score will be! (I claim no legal ownership to 'Where's Waldo?'. This application was strictly made for educational purposes only.)`,
+        link: 'https://wheres-waldo-mxpj.onrender.com/', src: waldo},
+        {title: 'Weather App', description: 'Search any city in the world for its current weather as well as its weather forecast for the next three days! Gets temperature, wind, cloud percent, and displays weather as an icon!',
+        link: 'https://storied-brioche-cd73f2.netlify.app/', src: weather},
+        {title: 'Memory Game',
+        description: `Choose and remember which Pokemon you chose to get the high score! Three levels of difficulty for a maximum of nine Pokemon! (I claim no legal ownership to 'Pokemon'. This application was strictly made for educational purposes only.)`,
+        link: 'https://idyllic-cranachan-473ef6.netlify.app/', src: memory},
     ]
 
     const listItems = projects.map((project) =>
         <li className='project-card' key={project.title}>
-            <img className='project-image' alt='project screenshot' src={project.src} />
+            <div className='project-image-container'>
+                <img className='project-image' alt='project screenshot' src={project.src} />
+            </div>
             <div className='project-content'>
-                <span className='project-title'>{project.title}</span>
+                <h3 className='project-title'>{project.title}</h3>
                 <span className='project-description'>{project.description}</span>
-                <span className='project-link'>{project.link}</span>
+                <span className='project-link'><a href={project.link}>{project.link}</a></span>
             </div>
         </li>
     );

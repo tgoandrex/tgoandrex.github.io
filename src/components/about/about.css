@@ -3,13 +3,13 @@
     padding-top: 10vh;
 }
 
-#cube-container, #about-summary {
+#cube-container, .about-summary {
     width: 300px;
     min-height: 30vh;
     margin: auto;
 }
 
-#about-summary p {
+.about-summary p {
     margin-top: 25px;
 }
 
@@ -32,23 +32,23 @@
         flex-direction: row;
     }
 
-    #cube-container, #about-summary {
+    #cube-container, .about-summary {
         min-height: 60vh;
     }
 
-    #about-summary p:first-child {
+    .about-summary p:first-child {
         margin-top: 0;
     }
 }
 
 @media screen and (min-width: 600px) { /* Tablet */
-    #about-summary {
+    .about-summary {
         font-size: 1.2rem;
     }
 }
 
 @media screen and (min-width: 1000px) { /* Desktop */
-    #cube-container, #about-summary {
+    #cube-container, .about-summary {
         width: 500px;
     }
 }
