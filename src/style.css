@@ -24,26 +24,7 @@ ul {
     visibility: hidden;
 }
 
-input {
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 1px solid black;
-    height: 1.5rem;
-}
-
-textarea {
-    border: 1px solid black;
-}
-
-textarea:focus, input:focus{
-    outline: none;
-}
-
 @media screen and (min-width: 600px) { /* Tablet */
-    label {
-        margin-right: 10px;
-    }
 }
 
 @media screen and (min-width: 1000px) { /* Desktop */
