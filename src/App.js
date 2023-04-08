@@ -12,6 +12,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <a className='background-disclaimer' href="http://www.freepik.com">Background designed by pikisuperstar / Freepik</a>
     </div>
   );
 }

@@ -1,6 +1,9 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
+import linkedin from '../../images/linkedin.svg'
+import github from '../../images/github.png'
+
 function Contact() {
     const [showContactForm, setShowContactForm] = useState(false);
 
@@ -46,6 +49,14 @@ function Contact() {
                     </div>
                 </form>
             }
+            <div className='contact-icons'>
+                <a className='contact-icon' href='https://www.linkedin.com/in/andrew-stapleton-590309133/'>
+                    <img src={linkedin} alt='Linkedin logo' />
+                </a>
+                <a className='contact-icon' href='https://github.com/tgoandrex'>
+                    <img src={github} alt='Github logo' />
+                </a>
+            </div>
         </section>
     )
 }

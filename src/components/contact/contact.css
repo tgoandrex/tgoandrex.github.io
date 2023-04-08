@@ -28,8 +28,6 @@
 .contact-form {
     margin: 15px 10px;
     padding: 15px 0;
-    border: 1px solid #000;
-    border-radius: 5px;
 }
 
 .form-section {
@@ -44,12 +42,11 @@ input {
     border-top: none;
     border-right: none;
     border-left: none;
-    border-bottom: 1px solid black;
     height: 1.5rem;
 }
 
-textarea {
-    border: 1px solid black;
+input, textarea {
+    opacity: 0.5;
 }
 
 textarea:focus, input:focus{
@@ -59,6 +56,22 @@ textarea:focus, input:focus{
 .submit-btn {
     padding: 10px;
     background-color: skyblue;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+.contact-icons {
+    margin-top: 50px;
+}
+
+.contact-icon {
+    margin-right: 15px;
+}
+
+.contact-icon img {
+    height: 35px;
+    width: auto;
+    background-color: #FFF;
 }
 
 @media screen and (min-width: 600px) { /* Tablet */
