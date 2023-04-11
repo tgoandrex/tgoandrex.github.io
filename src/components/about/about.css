@@ -9,8 +9,13 @@
     margin: auto;
 }
 
-.about-summary p {
-    margin-top: 25px;
+.about-summary {
+    background-color: darkslateblue;
+    border-radius: 10px;
+}
+
+.about-summary {
+    margin-top: 35px;
 }
 
 #cube-container {
@@ -36,7 +41,7 @@
         min-height: 60vh;
     }
 
-    .about-summary p:first-child {
+    .about-summary {
         margin-top: 0;
     }
 }

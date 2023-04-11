@@ -30,6 +30,8 @@
     display: flex;
     flex-direction: column;
     min-height: 200px;
+    background-color: darkslateblue;
+    border-radius: 10px;
 }
 
 .project-title, .project-link {

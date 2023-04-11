@@ -21,8 +21,8 @@ function Projects() {
             </div>
             <div className='project-content'>
                 <h3 className='project-title'>{project.title}</h3>
-                <span className='project-description'>{project.description}</span>
-                <span className='project-link'><a href={project.link}>{project.link}</a></span>
+                <p className='project-description'>{project.description}</p>
+                <p className='project-link'><a href={project.link}>{project.link}</a></p>
             </div>
         </li>
     );
