@@ -12,15 +12,15 @@ header .flex {
     justify-content: space-between;
 }
 
-#navbar-name {
+.navbar-name {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-#navbar-name, #mobile-toggle {
+.navbar-name, .mobile-toggle {
     font-size: 1.5rem !important;
 }
 
-#navbar-name, #tablet-desktop-nav div li {
+.navbar-name, .tablet-desktop-nav div li {
     margin: 25px 0 0 10px;
     padding: 5px;
 }
@@ -37,47 +37,47 @@ header .flex {
     color: inherit;
 }
 
-#tablet-desktop-nav div li {
+.tablet-desktop-nav div li {
     float: left;
 }
 
-#mobile-nav ul div li {
+.mobile-nav ul div li {
     text-align: center;
     background-color: #333333;
     transition: transform .2s;
 }
 
-#mobile-nav ul div li:hover {
+.mobile-nav ul div li:hover {
     transform: scale(1.2);
 }
 
-#mobile-nav ul div li a {
+.mobile-nav ul div li a {
     padding: 10px 0;
     display: block;
 }
 
-#mobile-toggle {
+.mobile-toggle {
     margin: 25px 10px 0 0;
     padding: 5px;
 }
 
-#mobile-nav {
+.mobile-nav {
     opacity: 0;
     transition: opacity .5s linear;
 }
 
-#mobile-nav.active {
+.mobile-nav.active {
     opacity: 1;
 }
 
 @media screen and (max-width: 599px) { /* Hide tablet and desktop nav under 600 px */
-    #tablet-desktop-nav {
+    .tablet-desktop-nav {
         display: none;
     }
 }
 
 @media screen and (min-width: 600px) { /* Tablet */
-    #mobile-toggle, #mobile-nav {
+    .mobile-toggle, .mobile-nav {
         display: none;
     }
 

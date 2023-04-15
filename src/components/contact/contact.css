@@ -4,6 +4,19 @@
     text-align: center;
 }
 
+.form-submit-message {
+    background-color: green;
+    width: 75%;
+    margin: auto;
+    padding: 15px 0;
+    margin-bottom: 5px;
+}
+
+.form-submit-message span {
+    float: right;
+    margin-right: 5px;
+}
+
 .contact-btn {
     background-color: skyblue;
     height: 75px;
@@ -30,6 +43,15 @@
     padding: 15px 0;
 }
 
+.contact-form *, .form-submit-message {
+    transition: opacity .75s linear;
+    opacity: 1;
+}
+
+.contact-form.hide *, .form-submit-message.hide {
+    opacity: 0;
+}
+
 .form-section {
     margin: 10px;
 }
@@ -43,14 +65,6 @@ input {
     border-right: none;
     border-left: none;
     height: 1.5rem;
-}
-
-input, textarea {
-    opacity: 0.5;
-}
-
-textarea:focus, input:focus{
-    outline: none;
 }
 
 .submit-btn {

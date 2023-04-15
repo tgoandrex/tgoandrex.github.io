@@ -21,15 +21,15 @@ function Navbar() {
   return (
     <header>
         <div className='flex'>
-            <div id='navbar-name'>Andrew Stapleton</div>
+            <div className='navbar-name'>Andrew Stapleton</div>
             <nav>
-                <ul id='tablet-desktop-nav'>
+                <ul className='tablet-desktop-nav'>
                     <NavListItems />
                 </ul>
             </nav>
-            <i id='mobile-toggle' className='fa fa-bars' onClick={handleToggle}></i>
+            <i className='mobile-toggle fa fa-bars' onClick={handleToggle}></i>
         </div>
-        <nav id='mobile-nav' className={showMobileMenu ? 'active': ''}>
+        <nav className={showMobileMenu ? 'mobile-nav active': 'mobile-nav'}>
             <ul>
                 {showMobileMenu ? <NavListItems /> : null}
             </ul>
