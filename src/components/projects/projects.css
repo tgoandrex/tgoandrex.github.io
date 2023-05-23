@@ -32,6 +32,7 @@
     min-height: 200px;
     background-color: darkslateblue;
     border-radius: 10px;
+    width: 100%;
 }
 
 .project-title, .project-link {

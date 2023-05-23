@@ -1,6 +1,7 @@
 import waldo from '../../images/wheres-waldo.PNG'
 import weather from '../../images/weather-app.PNG'
 import memory from '../../images/memory-game.PNG'
+import messageBoard from '../../images/mini-message-board.PNG'
 
 function Projects() {
     const projects = [
@@ -12,6 +13,9 @@ function Projects() {
         {title: 'Memory Game',
         description: `Choose and remember which Pokemon you chose to get the high score! Three levels of difficulty for a maximum of nine Pokemon! (I claim no legal ownership to 'Pokemon'. This application was strictly made for educational purposes only.)`,
         link: 'https://idyllic-cranachan-473ef6.netlify.app/', src: memory},
+        {title: 'Nodejs Mini Message Board',
+        description: `Add a message to the message board! The database will save your message for others to read!`,
+        link: 'https://nodejs-mini-message-board.onrender.com/', src: messageBoard},
     ]
 
     const listItems = projects.map((project) =>
