@@ -14,7 +14,7 @@ function Projects() {
         description: `Choose and remember which Pokemon you chose to get the high score! Three levels of difficulty for a maximum of nine Pokemon! (I claim no legal ownership to 'Pokemon'. This application was strictly made for educational purposes only.)`,
         link: 'https://idyllic-cranachan-473ef6.netlify.app/', src: memory},
         {title: 'Nodejs Mini Message Board',
-        description: `Add a message to the message board! The database will save your message for others to read!`,
+        description: `Add a message to the message board for others to read! You have the ability to edit and delete your own messages too! Features user authentication in order to post messages!`,
         link: 'https://nodejs-mini-message-board.onrender.com/', src: messageBoard},
     ]
 
