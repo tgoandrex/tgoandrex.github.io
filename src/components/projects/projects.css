@@ -29,6 +29,10 @@
     background-color: darkslateblue;
 }
 
+.accordian-image-container {
+    padding-bottom: 1rem;
+}
+
 .accordian-image {
     width: 300px;
     height: 300px;
