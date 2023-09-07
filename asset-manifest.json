@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.770537f5.css",
-    "main.js": "/static/js/main.c83a38e1.js",
+    "main.css": "/static/css/main.9954cb96.css",
+    "main.js": "/static/js/main.b586563d.js",
     "static/media/weather-app.PNG": "/static/media/weather-app.fd8cf83f9b44fced44ae.PNG",
     "static/media/wheres-waldo.PNG": "/static/media/wheres-waldo.0e60d006ccbcefc5172b.PNG",
     "static/media/memory-game.PNG": "/static/media/memory-game.505352815b1e8e8132aa.PNG",
     "static/media/background.jpg": "/static/media/background.77a5e04e69772b8e4c75.jpg",
+    "static/media/clock.PNG": "/static/media/clock.dab66219c22361209bc5.PNG",
     "static/media/mini-message-board.PNG": "/static/media/mini-message-board.e2c81fe98b5ef1c28cc0.PNG",
     "static/media/react.png": "/static/media/react.b19a7ea62269e54657b2.png",
     "static/media/html5.png": "/static/media/html5.6e4a5621783c3c8c0667.png",
     "static/media/css3.png": "/static/media/css3.68ba79f50e3278164cb8.png",
     "static/media/linkedin.svg": "/static/media/linkedin.115d3af0320cfa2e8e34ba26d011a603.svg",
     "index.html": "/index.html",
-    "main.770537f5.css.map": "/static/css/main.770537f5.css.map",
-    "main.c83a38e1.js.map": "/static/js/main.c83a38e1.js.map"
+    "main.9954cb96.css.map": "/static/css/main.9954cb96.css.map",
+    "main.b586563d.js.map": "/static/js/main.b586563d.js.map"
   },
   "entrypoints": [
-    "static/css/main.770537f5.css",
-    "static/js/main.c83a38e1.js"
+    "static/css/main.9954cb96.css",
+    "static/js/main.b586563d.js"
   ]
 }
