@@ -5,11 +5,15 @@ import weather from '../../images/weather-app.PNG';
 import memory from '../../images/memory-game.PNG';
 import messageBoard from '../../images/mini-message-board.PNG';
 import clock from '../../images/clock.PNG';
+import clown from '../../images/clown-landing.PNG';
 
 function Projects() {
     const projects = [
         {title: 'Weather App', description: 'Search any city in the world for its current weather as well as its weather forecast for the next three days! Gets temperature, wind, cloud percent, and displays weather as an icon!',
         link: 'https://storied-brioche-cd73f2.netlify.app/', src: weather},
+        {title: 'Clown Store',
+        description: `A landing page for a clown store! A colorful and fun Tailwind showcase!`,
+        link: 'https://extraordinary-faloodeh-2aa491.netlify.app/', src: clown},
         {title: `Where's Waldo App`,
         description: `Find Waldo in the picture and get the high score! The less time you took to find Waldo the higher your score will be! (I claim no legal ownership to 'Where's Waldo?'. This application was strictly made for educational purposes only.) (Please allow a moment for the scoreboards to display, as the project's backend is deployed under render.com's 'free' plan)`,
         link: 'https://wheres-waldo-mxpj.onrender.com/', src: waldo},
