@@ -2,9 +2,6 @@
   "name": "tgoandrex.github.io",
   "version": "0.1.0",
   "homepage": "https://tgoandrex.github.io/",
-  "aboutpage": "https://tgoandrex.github.io/about",
-  "projectspage": "https://tgoandrex.github.io/projects",
-  "contactpage": "https://tgoandrex.github.io/contact",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",

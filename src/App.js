@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import Navbar from './components/navbar/Navbar';
@@ -13,15 +13,19 @@ import './style.css';
 import './components/navbar/navbar.css';
 
 const Transition = () => {
+  const location = useLocation();
+
   return (
       <>
         <motion.div
+          key={location.key}
           animate={{ opacity: 0, display: 'none' }}
           transition={{ delay: 2 }}
           id='transition-background'
         >
         </motion.div>
         <motion.img
+          key={location.key}
           src={sword}
           alt='Sword'
           className='sword'
@@ -31,6 +35,7 @@ const Transition = () => {
           transition={{ duration: 2 }}
         />
         <motion.img
+          key={location.key}
           src={sword}
           alt='Sword'
           className='sword'
@@ -57,9 +62,9 @@ const RouteList = () => {
 function App() {
   return (
     <div id='App'>
-      <Transition />
       <div id='background'></div>
       <HashRouter>
+        <Transition />
         <Navbar />
         <RouteList />
       </HashRouter>
