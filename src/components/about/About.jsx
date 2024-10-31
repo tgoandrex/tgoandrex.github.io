@@ -1,31 +1,52 @@
+import { motion } from 'framer-motion';
+
+import './about.css';
+
 function About() {
     return (
         <section id='about'>
-            <div className='flex'>
-                <div id='cube-container'>
-                    <div className="cube">
-                        <div className="side front"></div>
-                        <div className="side back"></div>
-                        <div className="side left"></div>
-                        <div className="side right"></div>
-                        <div className="side top"></div>
-                        <div className="side bottom"></div>
-                    </div>
-                </div>
-                <div className='about-summary'>
-                    <p>
-                        Hello! My name is Andrew. I'm a self taught web developer with a particular interest in MERN stack 
-                        development, but I've dabbled in other technologies. I like figuring out things myself, and feel a 
-                        great sense of accomplishment when what I worked on finally works as I wanted it to. I've learned a lot, 
-                        bit there is still much more to learn.
-                    </p>
-                    <p>
-                        Besides web development, I have also completed a bachelor's in history, did various theater plays in 
-                        high school, and enjoys taking hikes and playing video games. I also like listening to rock and its 
-                        many genres, notably music from 80s and 90s, but not limited to that.
-                    </p>
-                </div>
-            </div>
+            <h3 className='about-header'>About Me</h3>
+            <motion.div
+                className='about-summary'
+                initial={{ height: 0 }}
+                animate={{ height: 350 }}
+                transition={{ delay: 2 }}
+            >
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 2.5 }}
+                >
+                    When I graduated college I didn't know what to do with my new Bachelor's in History. I realized 
+                    the only answers were: Either teach high school as a history teacher or go for a Master's for more 
+                    potential opportunities. I decided to learn how to code instead.
+                </motion.p>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 3.5 }}
+                >
+                    I first tried coding by taking a Python course at Codecademy, but did not fully appreciate 
+                    the potential and enjoyment of coding until I took the Full Stack Javascript path on The 
+                    Odin Project. Since then, I've enjoyed creating and being challenged by many projects 
+                    that I created myself.
+                </motion.p>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 4.5 }}
+                >
+                    Besides coding I also like to play video games and board games, watch movies &#40;historical and 
+                    fiction&#41;, and take hour hikes at my city park.
+                </motion.p>
+                <motion.p
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 5.5 }}
+                >
+                    The tools I often use are JavaScript, React, Node, PostgreSQL or MongoDB, and Express.
+                </motion.p>
+            </motion.div>
         </section>
     )
 }

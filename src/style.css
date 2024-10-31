@@ -1,41 +1,67 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-html, body {
-    height: 100%;
-    background-image: url('./images/background.jpg'); /* Background designed by pikisuperstar / Freepik */
-    color: #FFF;
+    font-family: sans-serif;
 }
 
 a {
     text-decoration: none;
-    color: skyblue;
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-family: Old London;
 }
 
 ul {
     list-style: none;
 }
 
-.background-disclaimer {
-    float: right;
+#background {
+    background-image: url('./images/background-mobile.jpg');
+    background-size: 100% 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -10;
 }
 
-.flex {
-    display: flex;
+#transition-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: #ccc;
 }
 
-.hide {
-    visibility: hidden;
+.sword {
+    position: absolute;
+    height: 300px;
+    z-index: 10;
+}
+
+#sword-one {
+    top: 20vh;
+    right: 65vw;
+}
+
+#sword-two {
+    top: 20vh;
+    right: 10vw;
 }
 
 @media screen and (min-width: 600px) { /* Tablet */
+    #background {
+        background-image: url('./images/background.jpg');
+    }
+
+    #sword-one {
+        right: 60vw;
+    }
+
+    #sword-two {
+        right: 35vw;
+    }
 }
 
 @media screen and (min-width: 1000px) { /* Desktop */

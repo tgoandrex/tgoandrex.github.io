@@ -1,15 +1,15 @@
-#about {
+#home {
     min-height: 100vh;
 }
 
-.about-header {
+.home-header {
     display: inline;
     position: relative;
     top: 17vh;
     right: -35vw;
 }
 
-.about-summary {
+.home-summary {
     background-color: #fff;
     border-radius: 10px;
     margin: auto;
@@ -17,20 +17,25 @@
     top: 19vh;
     right: -2vw;
     width: 250px; /* Height is being handled with framer-motion */
-    text-align: center;
     font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.about-summary p {
-    padding-bottom: 1vh;
+.home-summary p:first-child, .home-summary p:nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: Coolvetica;
+    text-transform: capitalize;
 }
 
 @media screen and (min-width: 600px) { /* Tablet */
-    .about-header {
+    .home-header {
         right: -21vw;
     }
 
-    .about-summary {
+    .home-summary {
         right: 23vw;
     }
 }

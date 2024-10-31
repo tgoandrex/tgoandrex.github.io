@@ -2,11 +2,12 @@ import { useState } from 'react';
 
 import AccordionItem from './AccordionItem';
 
-const Accordion = ({ projects }) => {
+const Accordion = ({ projects, onAccordionClick }) => {
     const [activeIndex, setActiveIndex] = useState(null);
 
     const handleClick = (index) => {
         setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+        onAccordionClick(index);
     }
 
     return (
@@ -16,7 +17,6 @@ const Accordion = ({ projects }) => {
                 title={project.title} 
                 description={project.description} 
                 link={project.link} 
-                src={project.src} 
                 isOpen={activeIndex === index} 
                 onClick={() => handleClick(index)} 
             />

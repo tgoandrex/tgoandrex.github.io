@@ -1,21 +1,19 @@
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
+
+import './contact.css';
 
 import linkedin from '../../images/linkedin.svg'
 import github from '../../images/github.png'
 
 function Contact() {
-    const [showContactForm, setShowContactForm] = useState(false);
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [formIsSubmitted, setFormIsSubmitted] = useState(false);
 
     const form = useRef();
-
-    const toggleClick = () => {
-        setShowContactForm(!showContactForm);
-    }
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -34,46 +32,67 @@ function Contact() {
         });
     };
 
-    if(formIsSubmitted) {
-
-    }
-
     return (
         <section id='contact'>
-            <div className={formIsSubmitted ? 'form-submit-message' : 'form-submit-message hide'}>
-                Form successfully submitted!
-                <span onClick={()=> {setFormIsSubmitted(false)}}>X</span>
-            </div>
-            <button className='contact-btn' onClick={()=> {toggleClick()}}>Let's Get in Touch</button>
-            <form className={showContactForm ? 'contact-form' : 'contact-form hide'} ref={form} onSubmit={sendEmail}>
-                <div className='form-section'>
-                    * Required Field
+            <h3 className='contact-header'>Contact Me</h3>
+            {formIsSubmitted &&
+                <div className={'form-submit-message'}>
+                    Form successfully submitted!
+                    <span onClick={()=> {setFormIsSubmitted(false)}}>&times;</span>
                 </div>
-                <div className='form-section flex'>
-                    <label htmlFor='user_name'>Name *</label>
-                    <input 
-                        type='text' id='user_name' name='user_name'
-                        value={username} onChange={(e) => setUsername(e.target.value)} required 
-                    />
+            }
+            <motion.form
+                className='contact-form'
+                ref={form}
+                onSubmit={sendEmail}
+                initial={{ height: 0 }}
+                animate={{ height: 279 }}
+                transition={{ delay: 2 }}
+            >
+                <div className='form-flex'>
+                    <motion.div
+                        className='form-section'
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 2.5 }}
+                    >
+                        <input 
+                            type='text' id='user_name' name='user_name' placeholder='Name'
+                            value={username} onChange={(e) => setUsername(e.target.value)} required 
+                        />
+                    </motion.div>
+                    <motion.div
+                        className='form-section'
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 3.5 }}
+                    >
+                        <input
+                            type='email' id='user_email' name='user_email' placeholder='Email'
+                            value={email} onChange={(e) => setEmail(e.target.value)} required
+                        />
+                    </motion.div>
+                    <motion.div
+                        className='form-section'
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 4.5 }}
+                    >
+                        <textarea
+                            id='message' name='message' placeholder='Your message...'
+                            value={message} onChange={(e) => setMessage(e.target.value)} required
+                        />
+                    </motion.div>
+                    <motion.div
+                        className='form-section'
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ delay: 5.5 }}
+                    >
+                        <button className='submit-btn' type='submit'>Submit</button>
+                    </motion.div>
                 </div>
-                <div className='form-section flex'>
-                    <label htmlFor='user_email'>Email</label>
-                    <input
-                        type='email' id='user_email' name='user_email'
-                        value={email} onChange={(e) => setEmail(e.target.value)}
-                    />
-                </div>
-                <div className='form-section flex'>
-                    <label htmlFor='message'>Message *</label>
-                    <textarea
-                        id='message' name='message'
-                        value={message} onChange={(e) => setMessage(e.target.value)} required
-                    />
-                </div>
-                <div className='form-section'>
-                    <button className='submit-btn' type='submit'>Submit</button>
-                </div>
-            </form>
+            </motion.form>
             <div className='contact-icons'>
                 <a className='contact-icon' href='https://www.linkedin.com/in/andrew-stapleton-590309133/'>
                     <img src={linkedin} alt='Linkedin logo' />
