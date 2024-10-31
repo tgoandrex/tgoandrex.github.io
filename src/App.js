@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import Navbar from './components/navbar/Navbar';
@@ -59,10 +59,10 @@ function App() {
     <div id='App'>
       <Transition />
       <div id='background'></div>
-      <Router>
+      <HashRouter>
         <Navbar />
         <RouteList />
-      </Router>
+      </HashRouter>
     </div>
   );
 }
