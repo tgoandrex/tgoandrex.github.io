@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c74c60d1.css",
+    "main.css": "/static/css/main.421d81bc.css",
     "main.js": "/static/js/main.e8b94850.js",
     "static/media/clown-landing.PNG": "/static/media/clown-landing.fd66fa9c054a33be80f0.PNG",
     "static/media/wheres-waldo.PNG": "/static/media/wheres-waldo.e55848620540b3e34df2.PNG",
@@ -12,11 +12,11 @@
     "static/media/sword.svg": "/static/media/sword.8263fc52455a0a2032e4bcd676c7d2a9.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.115d3af0320cfa2e8e34ba26d011a603.svg",
     "index.html": "/index.html",
-    "main.c74c60d1.css.map": "/static/css/main.c74c60d1.css.map",
+    "main.421d81bc.css.map": "/static/css/main.421d81bc.css.map",
     "main.e8b94850.js.map": "/static/js/main.e8b94850.js.map"
   },
   "entrypoints": [
-    "static/css/main.c74c60d1.css",
+    "static/css/main.421d81bc.css",
     "static/js/main.e8b94850.js"
   ]
 }
