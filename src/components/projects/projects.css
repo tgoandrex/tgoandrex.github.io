@@ -9,65 +9,44 @@ a:visited {
 .projects-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 25px 0;
+    padding-top: 10vh;
     text-align: center;
-    padding-top: 12vh;
 }
 
-.accordion {
-    margin: auto;
+.projects-mobile-item {
+    width: 85%;
+    position: relative;
+    overflow: hidden;
+}
+
+.projects-mobile-item img {
+    width: 100%;
+}
+
+.projects-mobile-description {
+    position: absolute;
+    bottom: 3px;
+    right: 0;
+    left: 0;
+    background: rgba(55, 55, 55, 0.5);
+    padding: 10px;
     text-align: center;
     color: #fff;
-    font-size: 13px;
 }
 
-.accordion-title {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    background-color: #000;
-    border-radius: 5px;
-}
-
-.accordion-title:hover {
-    background-color: #333;
-}
-
-.accordion-title,
-.accordion-content {
-    padding: 1rem;
-}
-
-.accordion-content {
-    background-color: #333;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transition: max-height 0.3s ease-out, opacity 0.3s ease-out, padding 0.3s ease-out;
-    padding: 0 1rem;
-}
-
-.projects-image-container {
-    margin: auto;
-    min-width: 250px;
-}
-
-.projects-image-container img {
-    width: 100%;
-    height: auto;
-}
-
-.projects-subcontainer {
-    display: flex;
-    flex-grow: 1;
+.projects-mobile-description a {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1px;
 }
 
 @media screen and (min-width: 600px) { /* Tablet */
-}
-
-@media screen and (min-width: 1000px) { /* Desktop */
     .projects-container {
         padding: 0;
         text-align: left;
+        display: block;
     }
 
     .projects-header {
@@ -77,25 +56,16 @@ a:visited {
         display: inline;
     }
 
-    .accordion {
-        width: 250px;
-        top: 19vh;
-        right: 23vw;
-        position: relative;
-    }
-
     .projects-image-container {
-        position: absolute;
-        left: 45vw;
-        top: 20vh;
-        width: 500px;
+        margin: auto;
+        min-width: 250px;
     }
+    
+    .projects-image-container img {
+        width: 100%;
+        height: auto;
+    }
+}
 
-    .projects-container {
-        display: block;
-    }
-
-    .projects-subcontainer {
-        display: block;
-    }
+@media screen and (min-width: 1000px) { /* Desktop */
 }

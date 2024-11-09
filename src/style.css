@@ -20,14 +20,14 @@ ul {
 #background {
     background-image: url('./images/background-mobile.jpg');
     background-size: 100% 100%;
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     z-index: -10;
 }
 
 #transition-background {
-    position: absolute;
+    position: fixed;
     height: 100%;
     width: 100%;
     z-index: 10;
@@ -35,7 +35,7 @@ ul {
 }
 
 .sword {
-    position: absolute;
+    position: fixed;
     height: 300px;
     z-index: 10;
 }
