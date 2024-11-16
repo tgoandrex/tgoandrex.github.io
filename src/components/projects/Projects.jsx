@@ -47,8 +47,8 @@ function Projects() {
         level 3.`,
         link: 'https://idyllic-cranachan-473ef6.netlify.app/', src: memory},
         {title: 'Nodejs Mini Message Board',
-        description: `Add a message to the message board for others to read. You have the ability to edit and delete 
-        your own messages too. Features user authentication in order to post messages.`,
+        description: `Create messages for various rooms. You have the ability to edit and delete your own messages. 
+        You can also create rooms with optional passwords. Features Passport user authentication.`,
         link: 'https://nodejs-mini-message-board.onrender.com/', src: messageBoard}
     ]
 
