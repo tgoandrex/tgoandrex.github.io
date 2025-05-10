@@ -38,7 +38,7 @@ const Home = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 5.5 }}
         >
-          Everything you see here (including this prortfolio) was made by me.
+          Every project you see (including this portfolio) was made by me.
         </motion.p>
       </motion.div>
     </section>
