@@ -9,7 +9,7 @@ function About() {
             <motion.div
                 className='about-summary'
                 initial={{ height: 0 }}
-                animate={{ height: 350 }}
+                animate={{ height: 380 }}
                 transition={{ delay: 2 }}
             >
                 <motion.p
@@ -44,7 +44,8 @@ function About() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 5.5 }}
                 >
-                    The tools I often use are JavaScript, React, Node, PostgreSQL or MongoDB, and Express.
+                    The tools I often use are HTML, CSS, JavaScript, Python, React, and PostgreSQL or MongoDB. 
+                    But I also like exploring other tools like TypeScript, Tailwind, Nodejs, and more.
                 </motion.p>
             </motion.div>
         </section>

@@ -9,7 +9,6 @@ import waldo from '../../images/wheres-waldo.PNG';
 import spacebook from '../../images/spacebook.PNG';
 import memory from '../../images/memory-game.PNG';
 import messageBoard from '../../images/mini-message-board.PNG';
-import clown from '../../images/clown-landing.PNG';
 
 function Projects() {
     const [toggleMobileView, setToggleMobileView] = useState(false);
@@ -35,9 +34,6 @@ function Projects() {
         {title: 'Spacebook', description: `A social media application with a sitewide light and dark (space) theme. 
             Create a post, upload a photo, or comment on other users' posts or photos.`,
         link: 'https://spacebook-rho.vercel.app/', src: spacebook},
-        {title: 'Clown Store',
-        description: `A landing page for an imaginary clown store. A colorful and fun Tailwind showcase.`,
-        link: 'https://extraordinary-faloodeh-2aa491.netlify.app/', src: clown},
         {title: `Where's Waldo App`,
         description: `Find Waldo in the picture and get the high score. The less time you took to find Waldo the 
         higher your score will be.`,
